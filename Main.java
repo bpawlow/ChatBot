@@ -51,7 +51,7 @@ class Main {
      return "Have a nice day, or not. I don't really care.\n\nEND OF CHAT";//Part FOUR (A)
 
    }
-   if(hasKeyword(userInput,"hi")||hasKeyword(userInput,"hey")||hasKeyword(userInput,"sup")){//part 3 
+   if(hasKeyword(userInput,"hi")||hasKeyword(userInput,"hey")||hasKeyword(userInput,"sup") || hasKeyword(userInput,"hello")){//part 3 
      return "How ya doin'?";
    }
   
@@ -65,8 +65,14 @@ class Main {
      return "Bojack Horseman is an amazing show!";
    }
  
-   if (hasKeyword(userInput,"haider")||hasKeyword(userInput,"haris")){ //part3
-     return "Haider and Haris are the real BBB: Brown, Bald, and Ballers.";
+   if (hasKeyword(userInput,"sports")||hasKeyword(userInput,"basketball") || hasKeyword(userInput,"baseball") || hasKeyword(userInput,"football")){ //part3
+     return "Did you mention sports? I love playing sports and so does my creator!";
+   }
+    if (hasKeyword(userInput,"television")||hasKeyword(userInput,"show") || hasKeyword(userInput,"TV")){ //part3
+     return "My favorite TV show is Breaking Bad. What's yours?";
+   }
+    if (hasKeyword(userInput,"movie")||hasKeyword(userInput,"theatre") || hasKeyword(userInput,"comedy") || hasKeyword(userInput,"comedies")){ //part3
+     return "I love movies, especially Marvel movies, and my favorite genre are comedies. What's your favorite movie or genre?";
    }
 
    int f= userInput.indexOf("do you ");
